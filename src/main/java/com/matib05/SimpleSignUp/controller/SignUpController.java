@@ -13,11 +13,11 @@ public class SignUpController {
     @GetMapping("/signup")
     public String signUpForm(Model model) {
         model.addAttribute("signup", new Signup());
-        return "signup";
+        return "html/signup";
     }
 
     @PostMapping("/signup")
     public String signUpSubmit(@ModelAttribute Signup signup) {
-        return "result";
+        return "html/result";
     }
 }

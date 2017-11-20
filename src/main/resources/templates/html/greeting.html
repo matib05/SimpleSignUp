@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <title>Greeting from SimpleSignUp</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" th:href="@{/js/greeting.js}" />
+</head>
+<body>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+    <p><a href="/signup">Click here</a> to sign up</p>
+</body>
+</html>
